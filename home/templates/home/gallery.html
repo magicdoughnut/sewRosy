@@ -1,0 +1,363 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Page Wonder - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/one-page-wonder.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}"  rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'home'%}">SewRosy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home'%}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about'%}">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'gallery'%}">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact'%}">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--     <header class="masthead">
+      <div class="overlay">
+        <div class="container">
+          <h1 class="display-1 text-white">SewRosy</h1>
+          <h2 class="display-4 text-white">Embroidery design</h2>
+        </div>
+      </div>
+    </header> -->
+
+    <header>
+      <div class="container">
+        <div class="p-5">
+          <h2 class="display-4 text-black text-center">Gallery</h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+<!--         <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+ -->        <!-- <hr class="star-dark mb-5"> -->
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/figure1crop.jpeg' %}" alt=""> 
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/figure2crop.jpeg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/figure3crop.jpeg' %}" alt=""> 
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/figure4crop.jpeg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/figure5crop.jpeg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/figure6crop.jpeg' %}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p> </p>
+
+
+
+    <!-- <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1466584241662-8cb021032c1a?auto=format&fit=crop&w=1400&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h2 class="display-4">For those about to rock...</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1466584241662-8cb021032c1a?auto=format&fit=crop&w=1400&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-5">
+              <h2 class="display-4">We salute you!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src="hhttps://images.unsplash.com/photo-1466584241662-8cb021032c1a?auto=format&fit=crop&w=1400&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 order-1">
+            <div class="p-5">
+              <h2 class="display-4">Let there be rock!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; SewRosy 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src={% static 'img/portfolio/figure1crop.jpeg' %} alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src={% static 'img/portfolio/figure2crop.jpeg' %} alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src={% static 'img/portfolio/figure3crop.jpeg' %} alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src={% static 'img/portfolio/figure4crop.jpeg' %} alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src={% static 'img/portfolio/figure5crop.jpeg' %} alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src={% static 'img/portfolio/figure6crop.jpeg' %} alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/freelancer.min.js' %}"></script>
+
+  </body>
+
+</html>
